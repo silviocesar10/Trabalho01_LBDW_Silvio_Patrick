@@ -1,4 +1,4 @@
-import Aluno from "../models/AlunoModel.js";
+import Aluno from "../models/Aluno.js";
 
 export const createAluno = async (req, res, next) => {
     const aluno = new Aluno(req.body);
