@@ -1,0 +1,21 @@
+{
+  "name": "trabalho01_lbdw_silvio",
+  "version": "1.0.0",
+  "description": "Respositorio para o primeiro trabalho na disciplina de laboratorio de desenvolvimento web ifes cachoeiro de itapemirim",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silviocesar10/Trabalho01_LBDW_Silvio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/silviocesar10/Trabalho01_LBDW_Silvio/issues"
+  },
+  "homepage": "https://github.com/silviocesar10/Trabalho01_LBDW_Silvio#readme"
+}
