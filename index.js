@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import connectDatabase from "./config/db.js";
-import routeAlunos from "./routes/routesAlunos.js";
+import routeAlunos from "./routes/alunosRoutes.js";
 import { errorHandling } from "./utils/error.js";
 
 const app = express();
