@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import TipoExercicio from "./TipoExercicio.js";
 const { Schema } = mongoose;
 const ExercicioSchema = new Schema({
     _id: false,
