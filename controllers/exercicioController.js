@@ -1,4 +1,4 @@
-import Exercicio from "../models/Exercicio.js"
+import Exercicio from "../models/Exercicio.js";
 
 export const createExercicio = async (req, res, next) => {
     const aluno = new Exercicio(req.body);
