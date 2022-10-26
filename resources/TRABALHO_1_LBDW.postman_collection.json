@@ -1,0 +1,685 @@
+{
+	"info": {
+		"_postman_id": "6952500a-82c0-4038-bc21-a7b63081bd05",
+		"name": "TRABALHO_1_LBDW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15667479"
+	},
+	"item": [
+		{
+			"name": "Alunos",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/alunos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alunos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alunos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/alunos/6351a8cc7e0e25656e3279c4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/alunos/6351a8cc7e0e25656e3279c4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alunos",
+								"6351a8cc7e0e25656e3279c4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/alunos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"nome\": \"Aluno Padrao 2\",\n \"dataNascimento\": \"2005-10-25\",\n \"sexo\": \"M\",\n \"email\": \"aluno2@email1.com\",\n \"senha\": \"1234563\",\n \"ativo\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/alunos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alunos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/alunos/6358160ffc056eedf6a9f7e4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"nome\": \"Aluno Padrao 2\",\n \"dataNascimento\": \"2005-10-25\",\n \"sexo\": \"M\",\n \"email\": \"alunasdasdsasdasdo2@email1.com\",\n \"senha\": \"1234563\",\n \"ativo\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/alunos/6358160ffc056eedf6a9f7e4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alunos",
+								"6358160ffc056eedf6a9f7e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/alunos/6358160ffc056eedf6a9f7e4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/alunos/6358160ffc056eedf6a9f7e4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"alunos",
+								"6358160ffc056eedf6a9f7e4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TipoExercicio",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/tipoexercicio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/tipoexercicio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tipoexercicio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/tipoexercicio/63581a63fc056eedf6a9f7fa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/tipoexercicio/63581a63fc056eedf6a9f7fa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tipoexercicio",
+								"63581a63fc056eedf6a9f7fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/tipoexercicio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\":\"tipo exercicio 1\",\n    \"pesoMinimo\" : 10,\n    \"pesoMaximo\" : 20,\n    \"degrauPeso\" : 12,\n    \"grupoMuscular\" : {\n        \"nome\" : \"Grupo 1\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tipoexercicio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tipoexercicio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/tipoexercicio/63581a63fc056eedf6a9f7fa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\":\"tipo exercicio 1\",\n    \"pesoMinimo\" : 10,\n    \"pesoMaximo\" : 20,\n    \"degrauPeso\" : 12,\n    \"grupoMuscular\" : {\n        \"nome\" : \"Grupo 1\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tipoexercicio/63581a63fc056eedf6a9f7fa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tipoexercicio",
+								"63581a63fc056eedf6a9f7fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/tipoexercicio/63581a63fc056eedf6a9f7fa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\":\"tipo exercicio 1\",\n    \"pesoMinimo\" : 10,\n    \"pesoMaximo\" : 20,\n    \"degrauPeso\" : 18,\n    \"grupoMuscular\" : {\n        \"nome\" : \"Grupo 1\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tipoexercicio/63581a63fc056eedf6a9f7fa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tipoexercicio",
+								"63581a63fc056eedf6a9f7fa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GrupoMuscular",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/grupomuscular",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/grupomuscular",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"grupomuscular"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/grupomuscular/6358184cfc056eedf6a9f7ee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/grupomuscular/6358184cfc056eedf6a9f7ee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"grupomuscular",
+								"6358184cfc056eedf6a9f7ee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/grupomuscular",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\" : \"Grupo 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/grupomuscular",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"grupomuscular"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/grupomuscular/6358184cfc056eedf6a9f7ee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\" : \"Grupo 1.1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/grupomuscular/6358184cfc056eedf6a9f7ee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"grupomuscular",
+								"6358184cfc056eedf6a9f7ee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/grupomuscular/6358184cfc056eedf6a9f7ee Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/grupomuscular/6358184cfc056eedf6a9f7ee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"grupomuscular",
+								"6358184cfc056eedf6a9f7ee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Instrutor",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/instrutor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/instrutor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"instrutor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/instrutor/63581d988f8cb189d2425747",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/instrutor/63581d988f8cb189d2425747",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"instrutor",
+								"63581d988f8cb189d2425747"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/instrutor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\" : \"Fulano\",\n    \"dataNascimento\": \"1998-05-06\",\n    \"sexo\" : \"M\",\n    \"email\": \"fulano@email.com\",\n    \"senha\" : \"123456\",\n    \"ativo\" : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/instrutor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"instrutor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/instrutor/63581d988f8cb189d2425747",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\" : \"Fulano\",\n    \"dataNascimento\": \"1998-05-06\",\n    \"sexo\" : \"M\",\n    \"email\": \"fulanosasdadasd@email.com\",\n    \"senha\" : \"123456\",\n    \"ativo\" : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/instrutor/63581d988f8cb189d2425747",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"instrutor",
+								"63581d988f8cb189d2425747"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/instrutor/63581d988f8cb189d2425747",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/instrutor/63581d988f8cb189d2425747",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"instrutor",
+								"63581d988f8cb189d2425747"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ficha",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/ficha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/ficha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ficha"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/ficha/635821b18f8cb189d242575f",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/ficha/635821b18f8cb189d242575f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ficha",
+								"635821b18f8cb189d242575f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/ficha",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"aluno\" : \"6351a8cc7e0e25656e3279c4\",\n    \"instrutor\" :  \"63581eba8f8cb189d242574f\",\n    \"ativa\" : true,\n    \"dataInicio\" : \"2015-06-06\",\n    \"exercicios\" : {\n        \"tipo\" :{\n            \"nome\":\"tipo exercicio 1\",\n            \"pesoMinimo\" : 10,\n            \"pesoMaximo\" : 20,\n            \"degrauPeso\" : 12,\n            \"grupoMuscular\" : {\n                \"nome\" : \"Grupo 1\"\n            }\n        },\n        \"ordem\" : 1,\n        \"peso\" : 38,\n        \"repeticoes\" : 20,\n        \"series\" : 5\n    },\n    \"execucoes\" : {\n        \"dataHoraInicio\" : \"2022-06-06T15:25\",\n        \"dataHoraFim\" : \"2022-06-06T18:25\",\n        \"observacoes\" : \"Alguma observacao qualquer\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/ficha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ficha"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/ficha/6358213d8f8cb189d2425752",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"aluno\" : \"6351a8cc7e0e25656e3279c4\",\n    \"instrutor\" :  \"63581eba8f8cb189d242574f\",\n    \"ativa\" : true,\n    \"dataInicio\" : \"2016-06-06\",\n    \"exercicios\" : {\n        \"tipo\" :{\n            \"nome\":\"tipo exercicio 1\",\n            \"pesoMinimo\" : 10,\n            \"pesoMaximo\" : 20,\n            \"degrauPeso\" : 12,\n            \"grupoMuscular\" : {\n                \"nome\" : \"Grupo 1\"\n            }\n        },\n        \"ordem\" : 1,\n        \"peso\" : 38,\n        \"repeticoes\" : 20,\n        \"series\" : 5\n    },\n    \"execucoes\" : {\n        \"dataHoraInicio\" : \"2022-06-06T15:25\",\n        \"dataHoraFim\" : \"2022-06-06T18:25\",\n        \"observacoes\" : \"Alguma observacao qualquer\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/ficha/6358213d8f8cb189d2425752",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ficha",
+								"6358213d8f8cb189d2425752"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/ficha/6358213d8f8cb189d2425752 Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/ficha/6358213d8f8cb189d2425752",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ficha",
+								"6358213d8f8cb189d2425752"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
