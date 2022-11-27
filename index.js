@@ -7,6 +7,8 @@ import routeFicha from "./routes/fichaRoutes.js";
 import routeGrupoMuscular from "./routes/grupoMuscularRoutes.js";
 import routeInstrutor from "./routes/instrutorRoutes.js";
 import { errorHandling } from "./utils/error.js";
+import routeAuth from "./routes/authRoutes.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 dotenv.config();
@@ -18,6 +20,8 @@ app.use("/api/tipoexercicio", routeTipoExercicio);
 app.use("/api/ficha", routeFicha);
 app.use("/api/grupomuscular", routeGrupoMuscular);
 app.use("/api/instrutor", routeInstrutor);
+app.use(cookieParser());
+app.use("/api/auth", routeAuth);
 
 
 app.listen(8080, () => {
