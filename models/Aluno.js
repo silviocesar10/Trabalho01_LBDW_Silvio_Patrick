@@ -32,6 +32,10 @@ const AlunoSchema = new Schema(
             type: Boolean,
             default: false,
         },
+        admin: {
+            type: Boolean,
+            default: false,
+        },
         fichas: [
             {
                 type: Schema.Types.ObjectId,
