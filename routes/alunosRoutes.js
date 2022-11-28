@@ -1,6 +1,6 @@
 import express from "express";
 import { createAluno, updateAluno, deleteAluno, getAluno, getAlunos } from "../controllers/alunoController.js";
-
+import { verificarAdmin } from "../utils/verificarToken.js";
 const router = express.Router();
 //router.post("/", async (req, res) => {
 //const aluno = new Aluno(req.body);
@@ -32,9 +32,9 @@ const router = express.Router();
 //res.send("Rota de listagem de alunos.");
 //});
 
-router.post("/", createAluno);
-router.put("/:id", updateAluno);
-router.delete("/:id", deleteAluno);
-router.get("/:id", getAluno);
-router.get("/", getAlunos);
+router.post("/", verificarAdmin, createAluno);
+router.put("/:id", verificarAdmin, updateAluno);
+router.delete("/:id", verificarAdmin, deleteAluno);
+router.get("/:id", verificarAdmin, getAluno);
+router.get("/", verificarAdmin, getAlunos);
 export default router;
