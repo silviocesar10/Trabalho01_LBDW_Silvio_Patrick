@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 
 const connectDatabase = async () => {
     try {
-        await mongoose.connect(process.env.MONGODB_LOCAL);
+        await mongoose.connect(process.env.MONGODB_URL_LOCAL);
     } catch (error) {
         throw error;
     }
