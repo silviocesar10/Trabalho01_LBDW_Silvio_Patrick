@@ -9,3 +9,6 @@ MONGODB_URL_LOCAL=mongodb://localhost:{porta onde o mongodb esta rodando}/academ
 JWT_SECRET=
 ```
 É importante ressaltar que o conteudo de JWT_SECRET deve ser gerado separadamente pois ali deve conter um token secreto que somente a aplicacao deve acessar, nesse caso vale ressaltar que estamos usando um token de base64, é possivel gerar um token no site <a href="https://www.convertsimple.com/random-base64-generator/">www.conversimple.com</a>
+
+## FrontEnd 
+Este projeto como seu frontend para completar o trabalho da academiaMERN um frontend sendo desenvolvido em React disponivel no seguinte repositorio<a href="https://github.com/silviocesar10/FrontEnd_LBDW_Patrick_Silvio">FrontEnd_LBDW_Patrick_Silvio</a>, é de importancia lembrar que o frontend no momento nao se encontra completo.
